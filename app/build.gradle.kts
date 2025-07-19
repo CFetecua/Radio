@@ -51,4 +51,25 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation "androidx.core:core-ktx:1.12.0" // Asegúrate de tener la última versión estable
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation "com.google.android.material:material:1.11.0"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4" // Si usas ConstraintLayout
+
+    // ExoPlayer
+    implementation "androidx.media3:media3-exoplayer:1.3.1"
+    implementation "androidx.media3:media3-ui:1.3.1" // Para controles de UI (opcional)
+    implementation "androidx.media3:media3-session:1.3.1" // Para MediaSession
+
+    // Para RecyclerView (si lo usas para la lista de emisoras)
+    implementation "androidx.recyclerview:recyclerview:1.3.2"
+
+    // Para cargar imágenes (ejemplo con Glide, puedes usar Coil u otra)
+    // implementation "com.github.bumptech.glide:glide:4.16.0"
+
+    // ... otras dependencias que ya tengas o necesites
+    testImplementation "junit:junit:4.13.2"
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
+
 }
